@@ -7,7 +7,7 @@ If you have fallen victim to this problem, I have good news for you!
 
 [Brandon Turner](https://blogs.msdn.microsoft.com/brandonturner/2009/08/16/broken-theme-in-windows-live-writer-you-can-fix-it/) created a tiny application to help you create a theme file for Writer. 
 
-Download the Windows Live Writer Theme Fixer
+[Download the Windows Live Writer Theme Fixer](https://github.com/OpenLiveWriter/ThemeFixer/releases/download/0.1/ThemeFixer.exe)
 
 ### Step 1: Open the ThemeFixer.exe and select the blog you want to fix in the top left corner. 
 
