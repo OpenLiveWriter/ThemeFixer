@@ -17,7 +17,7 @@ namespace ThemeFixer
 {
     public partial class MainWindow : Form
     {
-        private const string WRITER_REGISTRY_KEY = @"Software\Microsoft\Windows Live\Writer\Weblogs";
+        private const string WRITER_REGISTRY_KEY = @"Software\OpenLiveWriter\Weblogs";
         private const string BODY_TOKEN = "{post-body}";
         private const string TITLE_TOKEN = "{post-title}";
         private Regex CSS_URLS = new Regex(@"url\s*\((.*?)\)", RegexOptions.Compiled);
@@ -61,11 +61,11 @@ namespace ThemeFixer
                                         string appDateFolder = string.Empty;
 
                                         appDateFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-                                        blog.TemplateDirectory = String.Format(@"{0}\Windows Live Writer\blogtemplates\{1}\", appDateFolder, id);
+                                        blog.TemplateDirectory = String.Format(@"{0}\OpenLiveWriter\blogtemplates\{1}\", appDateFolder, id);
                                         try
                                         {
-                                            blog.PreviewPath = appDateFolder + @"\Windows Live Writer\blogtemplates\" + id + "\\" + template.GetValue("Webpage", "") as string;
-                                            blog.WysiwygPath = appDateFolder + @"\Windows Live Writer\blogtemplates\" + id + "\\" + template.GetValue("Framed", "") as string;
+                                            blog.PreviewPath = appDateFolder + @"\OpenLiveWriter\blogtemplates\" + id + "\\" + template.GetValue("Webpage", "") as string;
+                                            blog.WysiwygPath = appDateFolder + @"\OpenLiveWriter\blogtemplates\" + id + "\\" + template.GetValue("Framed", "") as string;
                                         }
                                         catch (Exception ex2)
                                         {
